@@ -1,0 +1,2 @@
+E:\Projects\ElPolloLoco\Intermediate\Build\Win64\UE4Editor\Development\ElPolloLoco\Definitions.ElPolloLoco.h
+e:\projects\elpolloloco\source\elpolloloco\ElPolloLoco.h

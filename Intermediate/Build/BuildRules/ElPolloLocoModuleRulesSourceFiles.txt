@@ -1,0 +1,3 @@
+E:\Projects\ElPolloLoco\Source\ElPolloLoco\ElPolloLoco.Build.cs
+E:\Projects\ElPolloLoco\Source\ElPolloLoco.Target.cs
+E:\Projects\ElPolloLoco\Source\ElPolloLocoEditor.Target.cs

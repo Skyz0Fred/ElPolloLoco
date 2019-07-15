@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ElPolloLoco.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{9560AE78-196E-4B93-91A1-BAF719424074}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ElPolloLoco.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ElPolloLocoEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{E2D7E6DA-B085-40E1-93E3-47F56BEFF128}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ElPolloLoco">
+      <UniqueIdentifier>{B4E6A9D7-2FB7-48BD-9157-927D18007E0A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ElPolloLoco\ElPolloLoco.Build.cs">
+      <Filter>Source\ElPolloLoco</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ElPolloLoco\ElPolloLoco.cpp">
+      <Filter>Source\ElPolloLoco</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ElPolloLoco\ElPolloLoco.h">
+      <Filter>Source\ElPolloLoco</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ElPolloLoco\FightMove.cpp">
+      <Filter>Source\ElPolloLoco</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ElPolloLoco\FightMove.h">
+      <Filter>Source\ElPolloLoco</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
