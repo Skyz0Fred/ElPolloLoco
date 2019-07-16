@@ -3,11 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "UObject.h"
 
 /**
  * 
  */
-class ELPOLLOLOCO_API FightMove
+class ELPOLLOLOCO_API FightMove: public UObject
 {
 public:
 	FightMove();

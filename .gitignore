@@ -6,6 +6,7 @@
 *.lo
 *.o
 *.obj
+*.bin
 *.pdb
 
 # Precompiled Headers
@@ -69,8 +70,8 @@ Intermediate/AssetRegistryCache/*
 Intermediate/Config/*
 Intermediate/DatasmithContentTemp/*
 Intermediate/ReimportCache/*
+Intermediate/CachedAssetRegistry.bin
 Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-*.bin
