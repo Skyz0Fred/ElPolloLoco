@@ -6,8 +6,7 @@
 *.lo
 *.o
 *.obj
-*.bin
-*.pdb
+
 
 # Precompiled Headers
 *.gch
@@ -16,6 +15,7 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
+*.dll
 
 # Fortran module files
 *.mod
@@ -66,12 +66,7 @@ Build/*/**
 Saved/*
 
 # Compiled source files for the engine to use
-Intermediate/AssetRegistryCache/*
-Intermediate/Config/*
-Intermediate/DatasmithContentTemp/*
-Intermediate/ReimportCache/*
-Intermediate/CachedAssetRegistry.bin
-Plugins/*/Intermediate/*
+Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*

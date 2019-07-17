@@ -1,8 +1,0 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\Projects\ElPolloLoco).
-  Parsing headers for ElPolloLoco
-    Running UnrealHeaderTool "E:\Projects\ElPolloLoco\ElPolloLoco.uproject" "P:\Intermediate\Build\Win64\ElPolloLoco\Development\ElPolloLoco.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for ElPolloLoco in 4.0096484 seconds
-  Using Visual Studio 2017 14.15.26726 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 5 actions with 16 processes...
-EXEC : [1/5] error : Unable to create child process
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command "E:\UE4\UE_4.22\Engine\Build\BatchFiles\Build.bat ElPolloLoco Win64 Development -Project="E:\Projects\ElPolloLoco\ElPolloLoco.uproject" -WaitMutex -FromMsBuild" exited with code 5. Please verify that you have sufficient rights to run this command.
