@@ -48,7 +48,9 @@ SourceArt/**/*.tga
 # Binary Files
 /Binaries/*/*.pdb
 Plugins/*/Binaries/*
-!Binaries/Win64/UE4Editor-ElPolloLoco.pdb
+Binaries/Win64/UE4Editor-ElPolloLoco.pdb
+Binaries/Win64/UE4Editor-ElPolloLoco.dll
+Binaries/Win64/UE4Editor.modules
 
 # Builds
 Build/*

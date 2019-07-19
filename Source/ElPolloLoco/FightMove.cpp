@@ -3,10 +3,3 @@
 
 #include "FightMove.h"
 
-FightMove::FightMove()
-{
-}
-
-FightMove::~FightMove()
-{
-}

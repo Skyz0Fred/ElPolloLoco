@@ -3,14 +3,21 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UObject.h"
+#include "Object.h"
+#include "FightMove.generated.h"
 
 /**
  * 
  */
-class ELPOLLOLOCO_API FightMove: public UObject
+UCLASS(BlueprintType, hidecategories=(Object))
+class ELPOLLOLOCO_API UFightMove: public UObject
 {
+	GENERATED_BODY()
+
 public:
-	FightMove();
-	~FightMove();
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "FightMove")
+		FString AttackName = "";
+		float Damage = 0.0f;
+		float CooldownBeforeNext = 0.0f;
+
 };
