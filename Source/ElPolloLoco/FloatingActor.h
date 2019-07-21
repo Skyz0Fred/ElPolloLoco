@@ -26,4 +26,12 @@ public:
 	UPROPERTY(EditAnywhere)
 	float DeltaHeightFactor = 20.0f;
 
+	//Test variables for printing and formatting
+	float testFloat = 200.0f;
+	int32 testInt = 5;
+	FString testName = "Roger";
+
+	//Print string variable
+	FString testString = FString::Printf(TEXT("Name = %s Mana= %d"), *testName, testInt);
+
 };
