@@ -9,15 +9,17 @@
 /**
  * 
  */
-UCLASS(BlueprintType, hidecategories=(Object))
+UCLASS(Blueprintable, BlueprintType, hidecategories=(Object))
 class ELPOLLOLOCO_API UFightMove: public UObject
 {
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "FightMove")
-		FString AttackName = "";
-		float Damage = 0.0f;
-		float CooldownBeforeNext = 0.0f;
+	UPROPERTY(BlueprintReadOnly, EditInstanceOnly, Category = "FightMove")
+	FString AttackName = "";
+	UPROPERTY(BlueprintReadOnly, EditInstanceOnly, Category = "FightMove")
+	float Damage = 0.0f;
+	UPROPERTY(BlueprintReadOnly, EditInstanceOnly, Category = "FightMove")
+	float CooldownBeforeNext = 0.0f;
 
 };
