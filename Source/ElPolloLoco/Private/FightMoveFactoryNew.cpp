@@ -13,3 +13,15 @@ UFightMoveFactoryNew::UFightMoveFactoryNew(const FObjectInitializer& ObjectIniti
 	bEditAfterNew = true;
 }
 
+//UFactory Overrides
+
+UObject* UFightMoveFactoryNew::FactoryCreateNew(UClass* InClass, UObject* InParent, FName InName, EObjectFlags Flags, UObject* Context, FFeedbackContext* Warn)
+{
+	return NewObject<UFightMove>(InParent, InClass, InName, Flags);
+}
+
+bool UFightMoveFactoryNew::ShouldShowInNewMenu() const
+{
+	return true;
+}
+

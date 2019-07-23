@@ -3,7 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Object.h"
+//#include "Object.h"
+#include "Engine/DataAsset.h"
 #include "Classes/Animation/AnimSequence.h"
 #include "FightMove.generated.h"
 
@@ -11,8 +12,9 @@
 /**
  * 
  */
-UCLASS(Blueprintable, BlueprintType, hidecategories=(Object))
-class ELPOLLOLOCO_API UFightMove: public UObject
+UCLASS(BlueprintType, hidecategories=(Object))
+//class ELPOLLOLOCO_API UFightMove: public UObject
+class ELPOLLOLOCO_API UFightMove : public UDataAsset
 {
 	GENERATED_BODY()
 
