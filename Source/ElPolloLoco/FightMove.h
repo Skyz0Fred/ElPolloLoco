@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "Object.h"
+#include "Classes/Animation/AnimSequence.h"
 #include "FightMove.generated.h"
+
 
 /**
  * 
@@ -14,12 +16,23 @@ class ELPOLLOLOCO_API UFightMove: public UObject
 {
 	GENERATED_BODY()
 
+private:
+		FString someString = "Something";
+
 public:
-	UPROPERTY(BlueprintReadOnly, EditInstanceOnly, Category = "FightMove")
-	FString AttackName = "";
-	UPROPERTY(BlueprintReadOnly, EditInstanceOnly, Category = "FightMove")
-	float Damage = 0.0f;
-	UPROPERTY(BlueprintReadOnly, EditInstanceOnly, Category = "FightMove")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FightMove")
+	FString AttackName = "AttackName";
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="FightMove")
+	TSubclassOf<UAnimSequence> Animation; //Displays any UClasses driving from UAnimSequence in a dropdown menu in Blueprints
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FightMove")
+	float DamageInflicted = 0.0f;
+	
+	UPROPERTY(EditAnywhere, meta=(MetaClass = "UserDefinedEnum"), Category = "FightMove") //Displays any blueprints derived from that code class
+	FStringClassReference Enum; 
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FightMove")
 	float CooldownBeforeNext = 0.0f;
 
 };

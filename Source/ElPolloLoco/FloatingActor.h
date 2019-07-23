@@ -19,6 +19,10 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+private:
+	void BeginPlay_DisplayDebug();
+	void BeginPlay_FormatText();
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -26,6 +30,7 @@ public:
 	UPROPERTY(EditAnywhere)
 	float DeltaHeightFactor = 20.0f;
 
+private:
 	//Test variables for printing and formatting
 	float testFloat = 200.0f;
 	int32 testInt = 5;
