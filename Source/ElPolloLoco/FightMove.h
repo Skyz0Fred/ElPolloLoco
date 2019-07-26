@@ -64,39 +64,4 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,meta = (ShowOnlyInnerProperties))
 		FFightMoveStruct FightMove;
-	/*
-	//Name Of Attack
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FightMove")
-	FString AttackName = "AttackName";
-
-	//Level Of Attack
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FightMove")
-		int Level = 1;
-
-	//Animation asset to use for move
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FightMove")
-		UAnimSequence *Animation = nullptr;
-
-	//Damage inflicted by move
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FightMove")
-		float DamageInflicted = 0.0f;
-
-	//Attack type defined in enum
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FightMove")
-		TEnumAsByte<EAttackTypes> AttackType;
-
-	//Cooldown Before Next Attack
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FightMove")
-		float CooldownBeforeNext = 0.0f;
-	*/
-	
-	/*Displays any UClasses driving from UAnimSequence in a dropdown menu in Blueprints
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="FightMove")
-	TSubclassOf<UAnimSequence> Animation; 
-	*/
-
-	/*Displays any blueprints derived from that code class
-	UPROPERTY(EditAnywhere, meta=(MetaClass = "UserDefinedEnum"), Category = "FightMove") 
-	FStringClassReference Enum;
-	*/
 };
