@@ -13,7 +13,10 @@
  Fight Move asset that will be used as a scalable solution for comboing things together. 
  */
 
- //Types Of Attacks - added later in the data asset to distinguish attacks
+ /*	Types Of Attacks - added later in the data asset to distinguish attacks
+	Finishing Attacks are based on enemy's health
+	The rest is pretty self-explanatory.
+ */
 UENUM()
 enum EAttackTypes
 {
@@ -32,6 +35,10 @@ struct FFightMoveStruct
 	//Name Of Attack
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		FString AttackName = "AttackName";
+
+	//Boolean for grab attacks
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool IsGrabAttack = false;
 
 	//Level Of Attack
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -52,6 +59,10 @@ struct FFightMoveStruct
 	//Cooldown Before Next Attack
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float CooldownBeforeNext = 0.0f;
+
+	//Particle Generated On Impact
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		UParticleSystem *ImpactParticle = nullptr;
 };
 
 UCLASS(BlueprintType, DisplayName="El Pollo Fight Move")
