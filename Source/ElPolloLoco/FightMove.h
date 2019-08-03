@@ -36,6 +36,10 @@ struct FFightMoveStruct
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		FString AttackName = "AttackName";
 
+	//Boolean for identifying default attack
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool IsDefaultAttack = false;
+
 	//Boolean for grab attacks
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool IsGrabAttack = false;
@@ -50,15 +54,15 @@ struct FFightMoveStruct
 
 	//Damage inflicted by move
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		float DamageInflicted = 0.0f;
+		float DamageInflicted = 1.0f;
+
+	//Distance of move damage zone.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float MoveReach = 100.0f;
 
 	//Attack type defined in enum
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		TEnumAsByte<EAttackTypes> AttackType;
-
-	//Cooldown Before Next Attack
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		float CooldownBeforeNext = 0.0f;
 
 	//Particle Generated On Impact
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -73,6 +77,6 @@ class ELPOLLOLOCO_API UFightMove : public UDataAsset
 
 public:
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite,meta = (ShowOnlyInnerProperties))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ShowOnlyInnerProperties))
 		FFightMoveStruct FightMove;
 };
