@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-//#include "Object.h"
 #include "Engine/DataAsset.h"
 #include "Classes/Animation/AnimSequence.h"
 #include "FightMove.generated.h"
@@ -70,7 +69,6 @@ struct FFightMoveStruct
 };
 
 UCLASS(BlueprintType, DisplayName="El Pollo Fight Move")
-//class ELPOLLOLOCO_API UFightMove: public UObject
 class ELPOLLOLOCO_API UFightMove : public UDataAsset
 {
 	GENERATED_BODY()

@@ -4,13 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "Animation/AnimInstance.h"
+#include "Interface_Anim.h"
 #include "ElPollo_AnimInstance.generated.h"
 
 /**
  * 
  */
-UCLASS()
-class ELPOLLOLOCO_API UElPollo_AnimInstance : public UAnimInstance
+UCLASS(BlueprintType)
+class ELPOLLOLOCO_API UElPollo_AnimInstance : public UAnimInstance, public IInterface_Anim
 {
 	GENERATED_BODY()
 	
