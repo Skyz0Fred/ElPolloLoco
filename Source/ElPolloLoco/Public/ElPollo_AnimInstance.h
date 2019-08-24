@@ -14,5 +14,11 @@ UCLASS(BlueprintType)
 class ELPOLLOLOCO_API UElPollo_AnimInstance : public UAnimInstance, public IInterface_Anim
 {
 	GENERATED_BODY()
+
+public:
+
+	//Grab montage duration that we use for delays
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float GrabDuration = 0.0f;
 	
 };

@@ -45,6 +45,9 @@ public:
 	void Attacking();
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "El Pollo Anim")
+	void SprintAttacking();
+
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "El Pollo Anim")
 	void ComboCancel();
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "El Pollo Anim")
