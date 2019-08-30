@@ -57,7 +57,11 @@ struct FFightMoveStruct
 
 	//Distance of move damage zone.
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		float MoveReach = 100.0f;
+		float MoveHorizontalReach = 100.0f;
+
+	//Distance of move damage zone.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float MoveVerticalReach = 100.0f;
 
 	//Attack type defined in enum
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)

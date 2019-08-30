@@ -39,3 +39,15 @@ FColor FFightMoveAssetActions::GetTypeColor() const
 {
 	return FColor::Black;
 }
+/*
+bool FFightMoveAssetActions::HasActions(TArray<FFightMoveAssetActions>) const
+{
+	return true;
+}
+
+FText FFightMoveAssetActions::GetAssetDescription() const
+{
+	FString* text = "Fight Move For El Pollo";
+	return FText::FromString(text);
+}
+*/
