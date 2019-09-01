@@ -22,7 +22,6 @@ enum EAttackTypes
 	GroundAttack UMETA(DisplayName = "Ground Attack"),
 	AirAttack UMETA(DisplayName = "Air Attack"),
 	ChargeAttack UMETA(DisplayName = "Charge Attack"),
-	SprintAttack UMETA(DisplayName = "Sprint Attack"),
 	FinishingAttack UMETA(DisplayName = "Finishing Attack")
 };
 
@@ -42,6 +41,9 @@ struct FFightMoveStruct
 	//Boolean for grab attacks
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool IsGrabAttack = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool IsSprintAttack = false;
 
 	//Level Of Attack
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -66,6 +68,9 @@ struct FFightMoveStruct
 	//Attack type defined in enum
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		TEnumAsByte<EAttackTypes> AttackType;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(EditCondition="IsSprintAttack"))
+		float SprintingAttackDistance = 0.0f;
 
 	//Particle Generated On Impact
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
