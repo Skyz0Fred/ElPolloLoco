@@ -7,6 +7,7 @@
 *.o
 *.obj
 
+
 # Precompiled Headers
 *.gch
 *.pch
@@ -26,7 +27,6 @@
 *.lib
 
 # Executables
-*.exe
 *.out
 *.app
 *.ipa
@@ -46,8 +46,11 @@ SourceArt/**/*.png
 SourceArt/**/*.tga
 
 # Binary Files
-Binaries/*
+/Binaries/*/*.pdb
 Plugins/*/Binaries/*
+Binaries/Win64/UE4Editor-ElPolloLoco.pdb
+Binaries/Win64/UE4Editor-ElPolloLoco.dll
+Binaries/Win64/UE4Editor.modules
 
 # Builds
 Build/*
@@ -68,7 +71,6 @@ Saved/*
 
 # Compiled source files for the engine to use
 Intermediate/*
-Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
