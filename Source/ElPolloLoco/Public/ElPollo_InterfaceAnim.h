@@ -61,5 +61,4 @@ public:
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "El Pollo Anim")
 	void CancelAttackForMove();
-
 };
