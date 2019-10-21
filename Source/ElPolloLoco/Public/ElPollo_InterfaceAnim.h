@@ -60,5 +60,8 @@ public:
 	void ComboLink();
 
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "El Pollo Anim")
+	void DamageOnHit();
+
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category = "El Pollo Anim")
 	void CancelAttackForMove();
 };
